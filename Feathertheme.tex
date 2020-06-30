@@ -92,9 +92,9 @@
 \begin{frame}{Conteúdo}{Descomplicando o CI/CD}
   \begin{itemize}
     \item O que é CI/CD?
-    \item CI/CD é um Hype?
-    \item CI/CD é DevOps?
-    \item Talk is cheap. Show me the code.
+    \item CI/CD é um Hype das tecnologias emergentes?
+    \item CI/CD é cultura DevOps?
+    \item Exemplo de CI/CD.
   \end{itemize}
 \end{frame}
 %-------------------------------------------------------
@@ -117,9 +117,27 @@
 \subsection{Descomplicando o CI/CD}
 \begin{frame}{O que é CI/CD?}{Descomplicando o CI/CD}
     \begin{center}
-      ``CI ou Integração Contínua, é uma prática de desenvolvimento de software na qual você compila e testa software toda vez que um desenvolvedor envia código para o repositório, e isso acontece várias vezes ao dia.''
-      
-      ``CD ou Entrega Contínua é uma abordagem de engenharia de software na qual a integração contínua, testes automatizados e recursos de implantação automatizada permitem que o software seja desenvolvido e implementado de forma rápida, confiável e repetitiva com intervenção humana mínima''
+      O que é CI/CD? \\~\\ ``De forma resumida, é automatizar o processo de entrega de software de forma rápida, ou melhor, continua, sem perder a qualidade.''
+    \end{center}
+\end{frame}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\section{Introduction}
+\subsection{Descomplicando o CI/CD}
+\begin{frame}{O que é CI/CD?}{Descomplicando o CI/CD}
+    \begin{center}
+      O que CI? \\~\\ ``CI ou Integração contínua, nada mais é que: compilar e testar software toda vez que um desenvolvedor envia código para o repositório, de forma automatizada, várias vezes ao dia.''
+    \end{center}
+\end{frame}
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+\section{Introduction}
+\subsection{Descomplicando o CI/CD}
+\begin{frame}{O que é CI/CD?}{Descomplicando o CI/CD}
+    \begin{center}
+      O que CD? \\~\\ ``CD ou Entrega contínua, nada mais é que: entrega automatizada de forma rápida, confiável, repetitiva e com o mínimo de intervenção humana!''
     \end{center}
 \end{frame}
 %-------------------------------------------------------
@@ -145,7 +163,7 @@
     \includegraphics[scale=0.09]{images/workflow.png}
   \end{center}
   \begin{center}
-      Desenvolvimento de software com CI\textbackslash CD.
+      Desenvolvimento de software com um pipeline para CI\textbackslash CD.
    \end{center}
 \end{frame}
 %-------------------------------------------------------
@@ -174,11 +192,15 @@
 \section{Tools}
 \subsection{Descomplicando o CI/CD}
 \begin{frame}{Ferramentas CI/CD}{Descomplicando o CI/CD}
-    \begin{itemize}
-     \item www.gitlab.com (Open source) git + pipelines
-     \item www.jenkins.io  (Open source) pipelines
-     \item www.github.com (Free) git + pipelines
-    \end{itemize}
+\begin{table}[]
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+               & \multicolumn{1}{l|}{Open} & \multicolumn{1}{l|}{Grátis} & \multicolumn{1}{l|}{GIT} & \multicolumn{1}{l|}{Pipeline} & \multicolumn{1}{l|}{Infra Interna} \\ \hline
+www.gitlab.com & \checkmark                       & \checkmark                         & \checkmark                      & \checkmark                           & \checkmark                                \\ \hline
+www.github.com & -                       & \checkmark                         & \checkmark                      & \checkmark                           & -                                \\ \hline
+www.jenkins.io & \checkmark                       & \checkmark                         & -                      & \checkmark                           & \checkmark                                \\ \hline
+\end{tabular}
+\end{table}
 \end{frame}
 %-------------------------------------------------------
 
@@ -194,7 +216,7 @@
 
 {\1
 \begin{frame}[plain,noframenumbering]
-  \finalpage{www.eugenio.xyz Thank you! ;) }
+  \finalpage{www.eugenio.xyz \\~\\ https://github.com/eugenio-cunha/cicd \\~\\ Thank you! ;) }
 \end{frame}}
 
 \end{document}
